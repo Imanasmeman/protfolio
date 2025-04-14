@@ -1,0 +1,143 @@
+.projects-section {
+  max-width: 90vw;
+  margin: 4rem auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .projects-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project-card {
+    flex: 1 1 clamp(300px, 30vw, 400px);
+    max-width: 100%;
+  }
+}
+
+.project-card {
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: left;
+  border: 1px solid #8e44ad;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+  background-color: rgba(57, 57, 57, 0.668);
+  backdrop-filter: blur(6px);
+}
+
+body[data-theme="light"] .project-card {
+  background-color: rgba(0, 0, 0, 0.03);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.35);
+}
+
+body[data-theme="light"] .project-card:hover {
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.project-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 55%; /* Ensures content fills the card */
+}
+
+.project-content h3 {
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.project-content p {
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+body[data-theme="light"] .project-content p {
+  color: #444;
+}
+
+.project-link,
+.project-code {
+  font-weight: 500;
+  text-decoration: none;
+  font-size: clamp(0.95rem, 1vw, 1.05rem);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: color 0.2s ease;
+}
+
+.project-link {
+  color: #fff;
+  background-color: #8e44ad;
+}
+
+.project-code {
+  color: #8e44ad;
+  background-color: #fff;
+}
+
+.project-link:hover,
+.project-code:hover {
+  color: #000;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Small screen tweaks */
+@media (max-width: 480px) {
+  .project-content {
+    padding: 1rem;
+  }
+
+  .projects-container {
+    gap: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .project-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .project-content p,
+  .project-link,
+  .project-code {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,21 @@
+.theme-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 52px;
+    height: 52px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .theme-toggle:hover {
+    background-color: #444;
+  }
+  
