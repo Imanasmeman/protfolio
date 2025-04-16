@@ -2,36 +2,32 @@
   max-width: 600px;
   margin: 4rem auto;
   padding: 2rem 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
-  text-align: center;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #f5f5f5; /* Light beige for a classic background */
+  color: #333333; /* Dark gray for text */
+  border-radius: 8px; /* Slightly rounded corners for elegance */
+  border: 1px solid #cccccc; /* Subtle gray border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: box-shadow 0.3s ease;
 }
 
-/* Light theme styles */
-body[data-theme="light"] .contact-section {
-  background-color: #333333; /* black box in light theme */
-  color: #fff;
+.contact-section:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
-
-/* Dark theme styles */
-body[data-theme="dark"] .contact-section {
-  background-color: #e6e6e6; /* white box in dark theme */
-  color: #111;
-}
-
 .section-title {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
-  font-weight: 700;
+  font-weight: bold;
+  color: #4a4a4a; /* Neutral dark gray for the title */
   margin-bottom: 2.5rem;
   position: relative;
+  font-family: 'Georgia', serif; /* Classic serif font */
+  text-align: center; /* Center the title */
 }
 
 .section-title::after {
   content: "";
   width: 60px;
   height: 4px;
-  background: #8e44ad;
+  background: #6b4226; /* Warm brown accent */
   display: block;
   margin: 0.5rem auto 0;
   border-radius: 2px;
@@ -46,35 +42,27 @@ body[data-theme="dark"] .contact-section {
 }
 
 .contact-info p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
-
-body[data-theme="light"] .contact-info p {
-  color: #eee;
-}
-
-body[data-theme="dark"] .contact-info p {
-  color: #444;
+  color: #4a4a4a; /* Neutral dark gray for text */
 }
 
 .contact-info a {
-  color: #8e44ad;
+  color: #6b4226; /* Warm brown for links */
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .contact-info a:hover {
-  color: #8e44ad;
   text-decoration: underline;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: 1rem;
   align-items: center;
   margin-top: 1.5rem;
 }
@@ -83,58 +71,44 @@ body[data-theme="dark"] .contact-info p {
 .contact-form textarea {
   width: 100%;
   max-width: 500px;
-  border-radius: 0.6rem;
-  border: 1.5px solid #8e44ad;
-  font-size: 0.95rem;
+  border-radius: 8px; /* Rounded corners for inputs */
+  border: 1.5px solid #6b4226; /* Warm brown border */
+  font-size: 1rem;
   padding: 0.7rem 1rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  background-color: #fff;
-  color: #111;
-}
-
-/* Light theme inputs */
-body[data-theme="light"] .contact-form input,
-body[data-theme="light"] .contact-form textarea {
-  background-color: #373737;
-  color: #fff;
-  border: 1.5px solid #8e44ad;
-}
-
-/* Dark theme inputs */
-body[data-theme="dark"] .contact-form input,
-body[data-theme="dark"] .contact-form textarea {
-  background-color: #fff;
-  color: #111;
-  border: 1.5px solid #8e44ad;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff; /* White background for inputs */
+  color: #333333; /* Dark gray for text */
+  font-family: 'Georgia', serif; /* Classic serif font */
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #8e44ad;
-  box-shadow: 0 0 6px 2px rgba(142, 68, 173, 0.5);
+  border-color: #6b4226; /* Highlight border on focus */
+  box-shadow: 0 0 6px 2px rgba(107, 66, 38, 0.5); /* Subtle shadow on focus */
   outline: none;
 }
 
 .contact-form button {
-  background-color: #8e44ad;
-  color: white;
-  font-size: 0.95rem;
+  background-color: #6b4226; /* Warm brown for button */
+  color: #ffffff; /* White text for contrast */
+  font-size: 1rem;
   padding: 0.7rem 1rem;
   border: none;
-  border-radius: 0.6rem;
+  border-radius: 8px;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: bold;
   letter-spacing: 0.5px;
-  transition: background-color 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .contact-form button:hover {
-  background-color: #8e44ad;
+  opacity: 0.9; /* Slight opacity change on hover */
+  transform: scale(1.02); /* Slight scaling effect on hover */
 }
 
 @media screen and (max-width: 480px) {
   .contact-form input,
   .contact-form textarea {
-    width: 90%;
+    width: 90%; /* Adjust width for smaller screens */
   }
 }

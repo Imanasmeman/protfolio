@@ -1,12 +1,15 @@
 footer {
-    text-align: center;
-    padding: 1rem;   
-    color: white;
-    font-size: 0.9rem;
-    
-  }
-  
-body[data-theme="light"] footer{
-   
-    color: #333;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--accent); /* Warm brown background for footer */
+  color: #ffffff; /* White text for contrast */
+  font-size: 0.9rem;
+  font-family: 'Georgia', serif; /* Classic serif font */
+  border-top: 1px solid var(--border-light); /* Subtle border for separation */
+}
+
+body[data-theme="light"] footer {
+  background-color: #f5f5f5; /* Light beige background for light theme */
+  color: #333333; /* Dark gray text for light theme */
+  border-top: 1px solid #cccccc; /* Subtle gray border for light theme */
 }

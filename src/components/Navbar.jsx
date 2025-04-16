@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FiMenu, FiX } from 'react-icons/fi';
-
+import './Navbar.css'
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navItems = [
