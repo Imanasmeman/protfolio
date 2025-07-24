@@ -12,6 +12,7 @@ import {
   SiMongodb,
   SiExpress,
   SiNetlify,
+  SiTypescript,
   
   
 } from 'react-icons/si';
@@ -19,15 +20,27 @@ import {
 import './Skills.css';
 
 const skills = [
-  { name: 'HTML', icon: <FaHtml5 /> },
-  { name: 'CSS', icon: <FaCss3Alt /> },
-  { name: 'JavaScript', icon: <FaJs /> },
-  { name: 'React', icon: <FaReact /> },
-  { name: 'GitHub', icon: <FaGithub /> },
- 
-  
-  
+  // 🧩 Frontend Technologies
+  { name: 'HTML', icon: <FaHtml5 /> },
+  { name: 'CSS', icon: <FaCss3Alt /> },
+  { name: 'JavaScript', icon: <FaJs /> },
+  { name: 'TypeScript', icon: <SiTypescript /> },
+  { name: 'React', icon: <FaReact /> },
+
+  // 🔄 State Management
+  { name: 'Redux', icon: <SiRedux /> },
+
+  // 🔧 Backend Technologies
+  { name: 'NodeJS', icon: <FaNodeJs /> },
+  { name: 'ExpressJS', icon: <SiExpress /> },
+
+  // 🗄️ Database
+  { name: 'MongoDB', icon: <SiMongodb /> },
+
+  // ⚙️ Tools & Platforms
+  { name: 'GitHub', icon: <FaGithub /> },
 ];
+
 
 const Skills = () => {
   return (

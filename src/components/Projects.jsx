@@ -2,20 +2,20 @@ import React from 'react';
 import './Projects.css';
 import civic from '../assets/civic.png'
 import flipkart from '../assets/flipkart.png'
-import x from '../assets/x.png'
+import memetic from '../assets/memetic.png'
 
 const projectData = [
   {
-    title: 'X Clone',
-    type: 'Group-based Project',
-    description:'A browser-based X Clone is a modern social media interface inspired by Twitter (X), built using HTML, CSS, and JavaScript. Though it is not connected to a backend , it beautifully simulates a user feed, tweet layouts, and basic UI interactions , offering a smooth front-end experience of a microblogging platform',
-    image: x,
-    code: 'https://github.com/Vikas71520/FullStack_Fighters',
-    live_link: 'https://github.com/Vikas71520/FullStack_Fighters'
+    title: 'Memtic',
+    type: 'Individual Project',
+    description:'Memetic is a modern meme creation and sharing web app built with React, Vite, Firebase, and Konva.js. It allows users to create custom memes using an interactive canvas editor, upload them to a public feed, like and comment on memes, and authenticate securely with Firebase.',
+    image: memetic,
+    code: 'https://github.com/Imanasmeman/memetic',
+    live_link: 'https://memeticsite.netlify.app/'
   },
   {
     title: 'CivicRoutes',
-    type: 'Group-based Project',
+    type: 'Group Project',
     description: 'A browser-basedCivicRoutes is a modern civic issue reporting platform built with ReactJS, allowing users to report local problems in their area. It connects citizens with authorities and promotes community engagement and problem resolution. platform to track on the performace and productivity level of employees.',
     image: civic,
     code:'https://github.com/Sneha-Nahak/Civic_Route_Website',
