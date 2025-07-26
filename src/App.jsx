@@ -4,31 +4,34 @@ import {
   Routes,
   Route,
   useLocation,
-  Navigate,
 } from "react-router-dom";
 
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
-import ThemeToggle from "./components/ThemeToggle";
 import Skills from "./components/Skills";
 import About from "./components/About";
 import Education from "./components/Education";
 import Footer from "./components/Footer";
 
-// ScrollToSection reads the current route and scrolls smoothly to the matching section id
+// ScrollToSection handles smooth scrolling with offset for fixed navbar
 const ScrollToSection = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Get section id from path or default to "hero"
-    const section = location.pathname === "/" ? "hero" : location.pathname.slice(1);
+    const navbarHeight = 64; // must match your Navbar height (h-16 = 64px)
+    const sectionId = location.pathname === "/" ? "hero" : location.pathname.slice(1);
 
-    // Scroll to element if exists
-    const el = document.getElementById(section);
+    const el = document.getElementById(sectionId);
     if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
+      const elementPosition = el.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - navbarHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   }, [location.pathname]);
 
@@ -41,13 +44,12 @@ const AppContent = () => {
       className="app-container min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500"
       style={{ scrollBehavior: "smooth" }}
     >
-      {/* Navbar and theme toggle */}
+      {/* Navbar */}
       <Navbar />
-      <ThemeToggle />
+
       <ScrollToSection />
 
       <main className="main-content pt-20">
-        {/* All your page sections */}
         <section id="hero"><Hero /></section>
         <section id="about"><About /></section>
         <section id="education"><Education /></section>
@@ -63,15 +65,23 @@ const AppContent = () => {
   );
 };
 
-// Routes setup - use a wildcard (*) redirecting to "/" as a catch-all
-// All routes render the same <AppContent />
 const App = () => (
-  <Router>
+  <div
+  className="app-container min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500 overflow-x-hidden"
+  style={{ scrollBehavior: 'smooth' }}
+>
+  {<Router>
     <Routes>
+      {/* Single route handling all paths */}
       <Route path="/*" element={<AppContent />} />
-      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
-  </Router>
+  </Router>}
+</div>
+
+ 
 );
 
 export default App;
+
+
+ 

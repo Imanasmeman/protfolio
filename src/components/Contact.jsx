@@ -27,11 +27,10 @@ const Contact = () => {
       });
   };
 
-  // OPTIONAL: Add a little fade-in animation for the whole card
   return (
     <section
       id="contact"
-      className="max-w-4xl mx-auto px-6 py-20 scroll-mt-24"
+      className="max-w-4xl mx-auto px-3 sm:px-6 py-20 scroll-mt-24"
       aria-label="Contact Me Section"
     >
       <h2 className="text-4xl font-serif font-bold text-center mb-12 text-gray-900 dark:text-gray-100 relative inline-block">
@@ -39,17 +38,17 @@ const Contact = () => {
         <span className="block h-1 w-28 bg-indigo-800 dark:bg-indigo-400 rounded-full mx-auto mt-3" />
       </h2>
 
-      {/* ONE single box card containing both contact info and form */}
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-10 space-y-10 font-serif">
+      {/* Card holds both contact info and the form */}
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-5 sm:p-10 space-y-10 font-serif w-full">
         {/* Contact Info */}
-        <div className="space-y-8 text-gray-800 dark:text-gray-200">
+        <div className="space-y-8 text-gray-800 dark:text-gray-200 w-full">
           <p className="flex items-center space-x-4 text-lg md:text-xl">
             <MdEmail className="text-indigo-700 dark:text-indigo-400 w-7 h-7 flex-shrink-0" />
-            <span>
+            <span className="break-all">
               <strong className="mr-1">Email:</strong>
               <a
                 href="mailto:anasbabu.meman@gmail.com"
-                className="hover:text-indigo-600 transition-colors duration-300"
+                className="break-all hover:text-indigo-600 transition-colors duration-300"
               >
                 anasbabu.meman@gmail.com
               </a>
@@ -62,15 +61,15 @@ const Contact = () => {
               <span className="select-text">+91 7434945893</span>
             </span>
           </p>
-          <p className="flex items-center space-x-4 text-lg md:text-xl break-words">
+          <p className="flex items-center space-x-4 text-lg md:text-xl">
             <FaLinkedin className="text-indigo-700 dark:text-indigo-400 w-7 h-7 flex-shrink-0" />
-            <span>
+            <span className="break-all">
               <strong className="mr-1">LinkedIn:</strong>
               <a
                 href="https://www.linkedin.com/in/anasbabu-meman-0004ba33a/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-indigo-600 transition-colors duration-300"
+                className="break-all hover:text-indigo-600 transition-colors duration-300"
               >
                 www.linkedin.com/in/anasbabu-meman-0004ba33a/
               </a>
@@ -106,7 +105,6 @@ const Contact = () => {
             required
             className="w-full px-5 py-4 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100 resize-none focus:outline-none focus:ring-2 focus:ring-indigo-600 transition"
           />
-
           <button
             type="submit"
             className="w-full py-4 bg-indigo-700 text-white font-semibold rounded-md hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-400 dark:focus:ring-indigo-700 shadow-lg transform transition-transform hover:-translate-y-0.5 active:scale-95"
