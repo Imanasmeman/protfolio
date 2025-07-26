@@ -1,6 +1,6 @@
 // components/ThemeToggle.jsx
 import React, { useEffect, useState } from 'react';
-import './ThemeToggle.css';
+
 
 const ThemeToggle = () => {
   const [isDark, setIsDark] = useState(true);
