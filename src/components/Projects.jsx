@@ -5,7 +5,7 @@ import memetic from '../assets/memetic.png';
 
 const projectData = [
   {
-    title: 'Memtic',
+    title: 'Memetic',
     type: 'Individual Project',
     description:
       'Memetic is a modern meme creation and sharing web app built with React, Vite, Firebase, and Konva.js. It allows users to create custom memes using an interactive canvas editor, upload them to a public feed, like and comment on memes, and authenticate securely with Firebase.',

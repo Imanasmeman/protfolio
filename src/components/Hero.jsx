@@ -78,7 +78,7 @@ const Hero = () => (
           {/* View My Projects Button */}
           <button
             onClick={() => window.location.href = '/projects'}
-            className="mt-4 px-8 py-3 bg-indigo-700 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-indigo-800 transition duration-300"
+            className="mt-4 px-8 py-3 bg-indigo-700 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-indigo-800 transition duration-300 cursor-pointer"
           >
             View My Projects
           </button>

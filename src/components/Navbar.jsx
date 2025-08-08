@@ -16,17 +16,11 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
+const handleResumeDownload = () => {
+  const resumeUrl = 'https://drive.google.com/uc?export=download&id=1v3tSiHn8GIxkSx4lukFl05eX08ydOmbN';
+  window.open(resumeUrl, '_blank');
+};
 
-  const handleResumeDownload = () => {
-    const resumeUrl = '/resume.pdf';
-    window.open(resumeUrl, '_blank');
-    const link = document.createElement('a');
-    link.href = resumeUrl;
-    link.download = 'resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
   const activeClassName = "text-indigo-600 dark:text-indigo-400 font-semibold border-b-2 border-indigo-600 dark:border-indigo-400";
 
@@ -69,7 +63,7 @@ const Navbar = () => {
             {/* Resume Button (hidden on mobile) */}
             <button
               onClick={handleResumeDownload}
-              className="hidden md:inline-block px-4 py-2 bg-indigo-600 dark:bg-indigo-400 text-white dark:text-gray-900 rounded-md hover:bg-indigo-700 dark:hover:bg-indigo-500 transition-colors duration-300 focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+              className="hidden md:inline-block px-4 py-2 bg-indigo-600 dark:bg-indigo-400 text-white dark:text-gray-900 rounded-md hover:bg-indigo-700 dark:hover:bg-indigo-500 transition-colors duration-300 focus:ring-2 focus:ring-indigo-400 focus:outline-none cursor-pointer"
               aria-label="Download Resume"
             >
               Resume
