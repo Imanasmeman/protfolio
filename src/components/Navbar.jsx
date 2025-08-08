@@ -17,7 +17,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 const handleResumeDownload = () => {
-  const resumeUrl = 'https://drive.google.com/uc?export=download&id=1v3tSiHn8GIxkSx4lukFl05eX08ydOmbN';
+  const resumeUrl = 'https://drive.google.com/file/d/1v3tSiHn8GIxkSx4lukFl05eX08ydOmbN/view?usp=drive_link';
   window.open(resumeUrl, '_blank');
 };
 
