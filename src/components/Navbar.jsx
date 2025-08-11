@@ -17,7 +17,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 const handleResumeDownload = () => {
-  const resumeUrl = 'https://drive.google.com/file/d/1N88gZnSxqkmS5nwqPnAqiLGfDocBlqwW/view?usp=sharing';
+  const resumeUrl = 'https://drive.google.com/file/d/1UO81WADK3qUanYA3UR5JI-yq0lI7sZWa/view?usp=sharing';
   window.open(resumeUrl, '_blank');
 };
 
