@@ -16,15 +16,24 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
-const handleResumeDownload = () => {
-  const resumeUrl = 'https://drive.google.com/file/d/1UO81WADK3qUanYA3UR5JI-yq0lI7sZWa/view?usp=sharing';
-  window.open(resumeUrl, '_blank');
-};
 
+  const handleResumeDownload = () => {
+    const resumeUrl = `/Anasbabu_Meman_Resume.pdf`; // from public folder
+
+    // Open in new tab
+    window.open(resumeUrl, '_blank');
+
+    // Trigger download
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Anasbabu_Meman_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   const activeClassName = "text-indigo-600 dark:text-indigo-400 font-semibold border-b-2 border-indigo-600 dark:border-indigo-400";
 
-  // Prevent scroll on mobile when menu is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -47,9 +56,7 @@ const handleResumeDownload = () => {
                   <NavLink
                     to={item.path}
                     className={({ isActive }) =>
-                      `text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300 px-3 py-2 ${
-                        isActive ? activeClassName : ''
-                      }`
+                      `text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300 px-3 py-2 ${isActive ? activeClassName : ''}`
                     }
                     onClick={closeMenu}
                     end={item.path === "/"}
@@ -114,9 +121,7 @@ const handleResumeDownload = () => {
               key={item.name}
               to={item.path}
               className={({ isActive }) =>
-                `text-gray-700 dark:text-gray-200 text-lg hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300 ${
-                  isActive ? activeClassName : ''
-                }`
+                `text-gray-700 dark:text-gray-200 text-lg hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300 ${isActive ? activeClassName : ''}`
               }
               onClick={closeMenu}
               end={item.path === "/"}
