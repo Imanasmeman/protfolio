@@ -2,8 +2,18 @@ import React from 'react';
 import civic from '../assets/civic.png';
 import flipkart from '../assets/flipkart.png';
 import memetic from '../assets/memetic.png';
+import vert from '../assets/verto.png';
 
 const projectData = [
+  {
+    title: 'VertoQuiz Platform',
+    type: 'Individual Project',
+    description: `VertoQuiz is a full-stack quiz management and participation platform for organizations and students. It features secure authentication, a dynamic quiz system, bulk question uploads, and detailed quiz attempt tracking, with clean, modern frontend interfaces.
+    `,
+    code: 'https://github.com/Imanasmeman/vertoQuiz', // update if different
+    live_link: 'https://vertoquiz-1.onrender.com', // update with actual link if deployed
+    image: vert, 
+  },
   {
     title: 'Memetic',
     type: 'Individual Project',
@@ -22,15 +32,7 @@ const projectData = [
     code: 'https://github.com/Sneha-Nahak/Civic_Route_Website',
     live_link: 'https://civicroute.netlify.app/',
   },
-  {
-    title: 'Flipkart Clone',
-    type: 'Individual Project',
-    description:
-      'A fully responsive Flipkart Clone built using HTML, CSS, and JavaScript. This project replicates core functionalities like product listing, user authentication, and search/sort features. Data is fetched from a Firebase Realtime Database. The project is developed using VS Code, version-controlled with GitHub, and deployed on Netlify.',
-    image: flipkart,
-    code: 'https://github.com/Imanasmeman/CodeMaster/tree/master',
-    live_link: 'https://dashing-croissant-95ea94.netlify.app/',
-  },
+   
 ];
 
 const Projects = () => (
