@@ -1,6 +1,7 @@
 import React from 'react';
 import profilePic from '../assets/Pass-Photo.jpg';
 
+// Hero Component with animated gradient background and waving hand emoji
 const Hero = () => (
   <>
     <style>
