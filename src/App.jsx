@@ -14,6 +14,9 @@ import Skills from "./components/Skills";
 import About from "./components/About";
 import Education from "./components/Education";
 import Footer from "./components/Footer";
+import Experience from "./components/Experience";
+import experienceData from "./src/assets/experience";
+
 
 // ScrollToSection handles smooth scrolling with offset for fixed navbar
 const ScrollToSection = () => {
@@ -52,6 +55,7 @@ const AppContent = () => {
       <main className="main-content pt-20">
         <section id="hero"><Hero /></section>
         <section id="about"><About /></section>
+        <section id="Experience"><Experience/></></section>
         <section id="education"><Education /></section>
         <section id="skills"><Skills /></section>
         <section id="projects"><Projects /></section>
