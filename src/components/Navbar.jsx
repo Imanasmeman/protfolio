@@ -18,7 +18,7 @@ const Navbar = () => {
   const closeMenu = () => setIsOpen(false);
 
   const handleResumeDownload = () => {
-    const resumeUrl = `/Anasbabu_Meman_Resume.pdf`; // from public folder
+    const resumeUrl = `/Anasbabu_CV.pdf`; // from public folder
 
     // Open in new tab
     window.open(resumeUrl, '_blank');
