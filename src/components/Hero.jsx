@@ -72,8 +72,7 @@ const Hero = () => (
             </span>
           </h1>
           <h3 className="text-xl md:text-2xl font-light text-indigo-200 mb-8 max-w-xl">
-            Aspiring Full Stack Developer & Tech Enthusiast passionate about
-            crafting elegant and efficient web applications.
+            Full Stack Developer & Tech Enthusiast passionate about crafting elegant, efficient, and scalable web applications.
           </h3>
 
           {/* View My Projects Button */}

@@ -15,7 +15,7 @@ import About from "./components/About";
 import Education from "./components/Education";
 import Footer from "./components/Footer";
 import Experience from "./components/Experience";
-import {experienceData} from "./src/assets/experience";
+import {experienceData} from "./assets/experienceData";
 
 
 // ScrollToSection handles smooth scrolling with offset for fixed navbar

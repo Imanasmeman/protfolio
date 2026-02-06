@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Education = () => {
   return (
@@ -14,12 +14,12 @@ const Education = () => {
       </h2>
 
       <div className="grid gap-10 md:grid-cols-2">
-        {/* Education Card 1 */}
+        {/* Education Card */}
         <article
           className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8 font-serif transition-transform duration-300 hover:scale-[1.03] animate-fadeInUp"
           tabIndex={0}
           aria-labelledby="edu-bca"
-          style={{ animationDelay: '0.15s' }}
+          style={{ animationDelay: "0.15s" }}
         >
           <h3
             id="edu-bca"
@@ -27,34 +27,15 @@ const Education = () => {
           >
             BCA
           </h3>
+
           <p className="font-semibold text-gray-900 dark:text-gray-100">
             Rai University
           </p>
-          <p className="text-gray-600 dark:text-gray-300">Ahmedabad, Gujarat</p>
+          <p className="text-gray-600 dark:text-gray-300">
+            Ahmedabad, Gujarat
+          </p>
           <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
             2021 to 2024
-          </p>
-        </article>
-
-        {/* Education Card 2 */}
-        <article
-          className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8 font-serif transition-transform duration-300 hover:scale-[1.03] animate-fadeInUp"
-          tabIndex={0}
-          aria-labelledby="edu-fullstack"
-          style={{ animationDelay: '0.35s' }}
-        >
-          <h3
-            id="edu-fullstack"
-            className="text-2xl font-semibold mb-3 text-indigo-600"
-          >
-            Full Stack Development
-          </h3>
-          <p className="font-semibold text-gray-900 dark:text-gray-100">
-            Masai School
-          </p>
-          <p className="text-gray-600 dark:text-gray-300">Bengaluru, Karnataka</p>
-          <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
-            October 2024 to Present
           </p>
         </article>
       </div>

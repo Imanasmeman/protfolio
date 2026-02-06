@@ -4,22 +4,15 @@ export const experienceData = [
     company: "Kalvium",
     location: "Trichy, India",
     duration: "Nov 2023 – Present",
-    points: [
-      "Taught Problem Solving & Programming and MERN Stack",
-      "Simplified complex concepts through hands-on projects",
-      "Mentored students through real-world projects",
-    ],
+    description:
+      "Taught Problem Solving & Programming and MERN Stack by simplifying complex concepts through hands-on projects and practical sessions, while mentoring students to improve confidence, problem-solving skills, and real-world development understanding.",
   },
   {
     role: "Full Stack Developer Trainee",
     company: "Masai School",
     location: "Bengaluru, India",
     duration: "Oct 2024 – Oct 2025",
-    points: [
-      "Built 3+ MERN stack web applications",
-      "Developed REST APIs with Node.js and Express",
-      "Implemented authentication and role-based access",
-      "Deployed applications on Render and Netlify",
-    ],
+    description:
+      "Built 3+ production-ready MERN stack applications, developed RESTful APIs using Node.js and Express, implemented authentication and role-based access control, designed MongoDB schemas, and deployed applications on Render and Netlify.",
   },
 ];
