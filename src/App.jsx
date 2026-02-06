@@ -55,7 +55,7 @@ const AppContent = () => {
       <main className="main-content pt-20">
         <section id="hero"><Hero /></section>
         <section id="about"><About /></section>
-        <section id="Experience"><Experience/></></section>
+        <section id="Experience"><Experience exp={experienceData} /></section>
         <section id="education"><Education /></section>
         <section id="skills"><Skills /></section>
         <section id="projects"><Projects /></section>
